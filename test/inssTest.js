@@ -6,7 +6,7 @@ describe('Bateria de testes do módulo de calculo do INSS',function(){
     
     it('Testando faixa de desconto do INSS de 8%',function(){
         expect(inssService.calculate(1000)).to.equal(80);
-		 expect(inssService.calculate(1556.94)).to.be.closeTo(124.55 , 0.01);
+        expect(inssService.calculate(1556.94)).to.be.closeTo(124.55 , 0.01);
     });
     it('Testando faixa de desconto do INSS de 9%',function(){
         expect(inssService.calculate(1700)).to.equal(153);
